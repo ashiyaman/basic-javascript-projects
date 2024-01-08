@@ -1,0 +1,147 @@
+body {
+    background-color: #f1f5f8;
+    border: 0px;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h2 {
+    color: #243d52;
+    font-size: 2.5rem;
+    margin-bottom: 0.2em;
+}
+
+.underline {
+    background: #48a5e9;
+    height: 0.2em;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 4em;
+}
+
+.card {
+    background: white;
+    border-radius: 5px;
+    margin: 1.5em;
+}
+
+.card div {
+    padding: 1em;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    border-radius: 50%;
+    height: 150px;
+    position: relative;
+    width: 150px;
+    z-index: 1;
+}
+
+.img-container::before {
+    background: #48a5e9;
+    border-radius: 50%;
+    color: white;
+    content: "\f10e";
+    display: grid;
+    font-family: "Font Awesome 5 Free";
+    font-size: x-large;
+    font-weight: 900;
+    height: 3rem;
+    left: 32%;
+    margin: auto;
+    place-content: center;
+    position: absolute;
+    top: 39%;
+    width: 3rem;
+    z-index: 2;
+}
+
+.img-container::after {
+    background: #48a5e9;
+    border-radius: 50%;
+    content: "";
+    display: block;
+    height: 9em;    
+    position: absolute;
+    margin: auto;    
+    transform: translateX(6%);
+    width: 9em;
+    z-index: 0;
+}
+
+h4 {
+    color: #243d52;
+}
+
+h5 {
+    color: #48a5e9;
+    padding: 0.3rem 1rem 1rem 1rem;
+}
+
+p {
+    color: #9eafbc;
+    line-height: 1.25;
+}
+
+.prev, .next {
+    background: transparent;
+    border: transparent;
+    color: #48a5e9;
+    cursor: pointer;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 591px) {
+    .img-container::before {
+        left: 35%;
+        top: 27%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .img-container::before {
+        left: 38%;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .img-container::before {
+        left: 40%;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .img-container::before {
+        left: 41%;
+    }
+}
+
+@media only screen and (min-width: 1060px) {
+    .img-container::before {
+        left: 42%;
+    }
+}
+
+@media only screen and (min-width: 1190px) {
+    .img-container::before {
+        left: 44%;
+    }
+}
