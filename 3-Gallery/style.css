@@ -1,0 +1,25 @@
+body * {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    color: #3a5a40;
+    font-family: 'cursive-font', cursive;
+    margin: 2%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#gallery-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /*to adjust number of columns based on container size*/
+    place-items: center;
+}
+
+img {
+    height: auto;
+    padding: 3%;
+    width: 90%;
+}
+
